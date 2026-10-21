@@ -1,9 +1,14 @@
 #include<stdio.h>
 int main(void)
 {
-	int fingerprint_match =1  ;
-	int retinal_match     =0  ;
-	int access_card_valid =1  ;
+	int fingerprint_match, retinal_match, access_card_valid;
+	printf("Enter fingerprint match(1 or 0): ");
+	scanf("%d", &fingerprint_match);
+	printf("Enter the retinal match(1 or 0): ");
+	scanf("%d", &retinal_match);
+	printf("Enter access valid card(1 or 0): ");
+	scanf("%d", &access_card_valid);
+
 	if((fingerprint_match && retinal_match)||(fingerprint_match && access_card_valid)||(retinal_match && access_card_valid))
 	{
 		printf("Access Granted\n");
